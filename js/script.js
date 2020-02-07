@@ -20,12 +20,19 @@ $(document).ready(function(){
         $(this).css('background-color', '#000');
     });*/
 
-    $('.theButton').on('mouseenter', function(){
+    /*$('.theButton').on('mouseenter', function(){
         $(this).addClass('makeBlack');
     });
 
     $('.theButton').on('mouseout', function(){
         $(this).removeClass('makeBlack');
+    });*/
+
+    //Challenge 3
+
+    $('.theButton').click(function(){
+        var color = $(this).css('background-color');
+        $('.superButton').text(color);
     });
 
 
